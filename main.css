@@ -1,0 +1,338 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+/* 4d4d4d */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color:black;
+  position: relative;
+  /* justify-content: space-between; */
+  /* display: flex; */
+}
+
+
+h1{
+  color: red;
+  font-style: italic;
+  margin-left: 30px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* pppppppppppppppppppppppppppppp */
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first section */
+
+section{
+  background-image: url(free-photo-of-close-up-of-woman-with-earring-and-necklace.jpeg);
+  filter: contrast(2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  
+}
+
+
+.h1{
+  color: black;
+  font-style: italic;
+  text-align: center;
+  text-shadow:1px 1px red ;
+  padding-top: 10px;
+
+}
+
+
+.p{
+  color: blue;
+  font-style: italic;
+  text-shadow: 0px .5px red;
+  text-align: center;
+  padding-top:12px;
+}
+
+
+.button1{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: red;
+  /* border:yellow; */
+  box-shadow: 06px 7px 02px blanchedalmond;
+  background-color: black;
+}
+
+
+
+
+
+/* second section */
+
+.span1{
+  color: red;
+}
+
+.h4{
+  
+  text-align: center;
+  padding-top: 3px;
+}
+
+
+.H4{
+  
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+/* third section */
+
+
+.card-group{
+  margin-top: 10px;
+
+}
+
+.h5{
+  color: red;
+  font-size: 15px;
+  text-shadow: 1px 1px black;
+  font-style: italic;
+  text-align: left;
+}
+
+.img2{
+border-bottom-right-radius: 50px;
+
+box-shadow: 5px 8px 0px wheat;
+
+
+
+}
+.img2:active{
+  animation: infinite 2s img;
+}
+
+@keyframes img{
+  0% ,100%{transform: scale(1);}
+  50%{transform: scale(.8);}
+
+}
+
+
+
+
+
+
+/* four section */
+
+
+.ak{
+  border-radius: 30px;
+}
+ul{
+color: chartreuse;
+
+}
+
+.info2{
+  color: red;
+ font-size: 22px;
+  font-family: serif;
+}
+
+.aha{
+  color: blue;
+  font-style: italic;
+}
+
+
+
+/* five section */
+
+.info{
+  color: black;
+ font-size: 22px;
+  font-family: serif;
+}
+
+.ol{
+  color:red;
+}
+
+.pp{
+  color: blue;
+  font-style: italic;
+}
+
+
+
+
+/* six section */
+progress{
+  width: 200px;
+  height: 15px;
+  margin-bottom:10px ;
+  border: none;
+}
+.peopleopinion{
+  width: 80%; 
+  height: 200px;
+}
+
+dl{
+  float: right;
+}
+
+dt{
+  color: black;
+font-family: serif;
+}
+
+
+
+/* seven section */
+
+
+
+label{
+  color: blue;
+  font-style: italic;
+}
+
+h5{
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+}
+
+
+
+
+
